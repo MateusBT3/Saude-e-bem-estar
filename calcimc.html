@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QualityLin</title>
+</head>
+<body class="bodycalcimc">
+    <header>
+        <img src="img/logo2.png" alt="Logo da QualityLin" width="100px">
+        
+        <div>
+            <button><a href="index.html">Home</a></button>
+            <button><a href="etapas.html">Etapas</a></button>
+            <button><a href="calcimc.html">Calcule o IMC</a></button>
+        </div>
+    </header>
+
+    <section class="calculadoraimc">
+
+        <img id="imgimc" src="img/ImcPadrao.png">
+        <div id="calcImc">
+
+            <input id="altura" type="number" placeholder="Altura em Cm:">
+            <br>
+            <input id="peso" type="number" placeholder="Peso em Kg:">
+            <br>
+            <input onclick="soma()" type="button" value="Calcular">
+            <br>
+            <label id="resultado" for="">Resultado: </label>
+
+            <script src="app.js"></script>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contatos">
+            <img style="margin-right: 10px;" src="img/celular.png" width="30px">
+            <h1>(19) 4002-8922</h1>
+        </div>
+
+        <div class="contatos">
+            <img style="margin-right: 10px;" src="img/email.png" width="30px" height="30px">
+            <h1>qualitylin@gmail.com</h1>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

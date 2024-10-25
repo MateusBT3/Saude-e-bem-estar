@@ -1,0 +1,407 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: cursive;
+}
+
+header {
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+    background-color: #36abffc0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        text-shadow: 0.05em 0.05em #035AA6;
+    }
+
+    button {
+        margin-right: 50px;
+        width: 100px;
+        height: 35px;
+        background-image: linear-gradient(#04BF55, #3171a5);
+        border-radius: 30px;
+        border-color: #035AA6;
+        border: white;
+        cursor: pointer;
+
+        a {
+            font-family: cursive;
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    button:hover {
+        background-color: #035AA6;
+        background-image: linear-gradient(#00ff6e, #008cff);
+        transform: scale(108%);
+
+        transition: 0.5s;
+    }
+}
+
+footer {
+    background-color: #36abff8e;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+}
+
+.contatos {
+    display: flex;
+    margin: 5px;
+}
+
+
+/* Css Matias INDEX*/
+
+.bodyindex {
+    background-image: url(img/fundoMaratona.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divmain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .mainindex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12%;
+        width: 500px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.356);
+        border-radius: 100px;
+
+        h1 {
+            padding-top: 10px;
+            color: white;
+            width: 450px;
+        }
+
+        button {
+            width: 180px;
+            height: 80px;
+            margin-bottom: 10px;
+            border-radius: 40px;
+            background-image: linear-gradient(#04BF55, #3171a5);
+            border-color: #035AA6;
+            border: white;
+
+            a {
+                cursor: pointer;
+                color: white;
+                font-size: large;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+button:hover {
+    background-color: #035AA6;
+    background-image: linear-gradient(#00ff6e, #008cff);
+    transform: scale(108%);
+    transition: 0.5s;
+}
+
+.sectionindex {
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 20%;
+    margin-bottom: 5%;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        width: 345px;
+        border: solid black 3px;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            width: 110px;
+            height: 60px;
+            margin-bottom: 10px;
+            border-radius: 40px;
+            background-image: linear-gradient(#04BF55, #3171a5);
+            border-color: #035AA6;
+            border: white;
+
+            a {
+                color: white;
+                font-size: large;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-decoration: none;
+            }
+        }
+
+        button:hover {
+            background-color: #035AA6;
+            background-image: linear-gradient(#00ff6e, #008cff);
+            transform: scale(108%);
+            transition: 0.5s;
+        }
+    }
+
+    img {
+        margin-left: 3%;
+    }
+}
+
+/* NOTICIAS */
+.sectionNews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.news {
+    background-color: rgba(255, 255, 255, 0.397);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 95px;
+    width: 1237px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+article {
+    display: flex;
+    margin: 30px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 320px;
+    background-color: #ffffff;
+    margin: 20px;
+    border: solid black 1px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.253);
+
+    p {
+        margin-top: 0;
+    }
+
+    a {
+        border: solid #afe250;
+        color: #afe250;
+        text-decoration: none;
+        padding: 2px;
+        margin-bottom: 10px;
+    }
+
+    a:hover {
+        background-color: #afe250;
+        color: #ffffff;
+        text-decoration: underline;
+        transition: 0.2s;
+    }
+}
+
+.cardbugado {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 320px;
+    background-color: #ffffff;
+    margin: 20px;
+    margin-bottom: 20px;
+    border: solid black 1px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.253);
+
+    p {
+        margin-top: 0;
+    }
+
+    a {
+        border: solid #afe250;
+        color: #afe250;
+        text-decoration: none;
+        padding: 2px;
+        margin-top: 33px;
+    }
+
+    a:hover {
+        background-color: #afe250;
+        color: #ffffff;
+        text-decoration: underline;
+        transition: 0.2s;
+    }
+}
+
+.textNews {
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 40px 40px 0px 0px;
+    margin-bottom: 0;
+    margin-top: 2%;
+}
+
+/*ETAPAS*/
+.bodyetapas {
+    background-color: rgba(196, 231, 196, 0.699);
+}
+
+.mainetapas {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+    height: 650px;
+    width: 100%;
+    margin-bottom: 12%;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 900px;
+        color: black;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        li {
+            margin-top: 2%;
+            text-align: initial;
+        }
+    }
+
+    img {
+        margin-left: 3%;
+    }
+}
+
+.sectionetapas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+    height: 650px;
+    width: 100%;
+    margin-bottom: 12%;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 900px;
+        color: black;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        li {
+            margin-top: 2%;
+            text-align: initial;
+        }
+    }
+
+    img {
+        margin-top: 2%;
+        margin-right: 3%;
+    }
+}
+
+/* IMC */
+.bodycalcimc {
+    background-color: rgba(196, 231, 196, 0.699);
+}
+
+.calculadoraimc {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#calcImc {
+    background-color: #f5f0ed;
+    border: solid;
+    border-left-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    text-align: left;
+}
+
+input {
+    width: 250px;
+    height: 60px;
+    font-size: 30px;
+    border: solid rgba(0, 0, 0, 0.356) 1px;
+    cursor: pointer;
+}
+
+label {
+    text-align: left;
+    font-size: 20px;
+}
+
+#imgimc {
+    border: solid;
+    border-right-style: none;
+}
+
+#resultado {
+    font-size: 30px;
+}
